@@ -1,0 +1,8 @@
+---
+applications:
+ - name: cf-docker-tomcat7
+   host: cf-docker-tomcat7
+   memory: 1g
+   instances: 1
+   env:
+     CF_ENV_TEST_KEY: "test env key/value"

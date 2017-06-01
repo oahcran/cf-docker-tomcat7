@@ -33,4 +33,12 @@ cf app cf-docker-tomcat7 --guid
 cf curl /v2/apps/<guid>/stats
 ```
 
+deployment with `manifest.yml`
+
+currently the `cf cli` does not support put docker image as a part of `manifest.yml`, so the following command line would be useful for a single docker app deployment to Cloud Foundry.
+
+```
+cf push -f manifest.yml -o oahcran/cf-docker-tomcat7
+```
+
 * To Be Done
